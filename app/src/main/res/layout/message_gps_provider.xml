@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/Tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="موقعیت جغرافیایی شما غیر فعال می باشد!"/>
+
+   <LinearLayout
+       android:layout_below="@+id/Tv_title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:id="@+id/Btn_yes"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_weight=".50"
+           android:gravity="center"
+           android:text="بله"/>
+
+
+       <Button
+           android:id="@+id/Btn_no"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_weight=".50"
+           android:gravity="center"
+           android:text="خیر"/>
+
+   </LinearLayout>
+
+</RelativeLayout>
