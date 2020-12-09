@@ -37,7 +37,8 @@ import com.mapbox.mapboxsdk.style.layers.Property
 import com.mapbox.mapboxsdk.style.layers.PropertyFactory
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource
-import kotlinx.android.synthetic.main.mapbox.*
+import kotlinx.android.synthetic.main.select_location.*
+
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
