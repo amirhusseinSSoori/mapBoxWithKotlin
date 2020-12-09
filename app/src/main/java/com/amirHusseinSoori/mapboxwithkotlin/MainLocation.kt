@@ -18,5 +18,9 @@ class MainLocation:Fragment(R.layout.main_fragment) {
             val fr = GiveLocationFragment()
             fr.show(sum, "")
         }
+
+        btn_search.setOnClickListener {
+            findNavController().navigate(R.id.action_mainLocation_to_searchFragment)
+        }
     }
 }

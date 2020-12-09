@@ -15,9 +15,18 @@
         tools:layout="@layout/main_fragment"
         android:name="com.amirHusseinSoori.mapboxwithkotlin.MainLocation"
         android:label="MainLocation" >
-
+        <action
+            android:id="@+id/action_mainLocation_to_searchFragment"
+            app:destination="@id/searchFragment"/>
         <action
             android:id="@+id/action_mainLocation_to_runMapBoxFragment"
             app:destination="@id/runMapBoxFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        tools:layout="@layout/search_fragment"
+        android:name="com.amirHusseinSoori.mapboxwithkotlin.SearchFragment"
+        android:label="SearchFragment" >
+
     </fragment>
 </navigation>
