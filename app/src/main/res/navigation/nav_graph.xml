@@ -3,11 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/runMapBoxFragment">
+    app:startDestination="@id/mainLocation">
 
     <fragment
         android:id="@+id/runMapBoxFragment"
-        android:name="com.amirHusseinSoori.mapboxwithkotlin.RunMapBoxFragment"
-        tools:layout="@layout/mapbox"
+        android:name="com.amirHusseinSoori.mapboxwithkotlin.SelectLocationFragment"
+        tools:layout="@layout/select_location"
         android:label="RunMapBoxFragment" />
+    <fragment
+        android:id="@+id/mainLocation"
+        tools:layout="@layout/main_fragment"
+        android:name="com.amirHusseinSoori.mapboxwithkotlin.MainLocation"
+        android:label="MainLocation" >
+
+        <action
+            android:id="@+id/action_mainLocation_to_runMapBoxFragment"
+            app:destination="@id/runMapBoxFragment"/>
+    </fragment>
 </navigation>

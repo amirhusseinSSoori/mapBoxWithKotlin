@@ -38,15 +38,13 @@ import com.mapbox.mapboxsdk.style.layers.PropertyFactory
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource
 import kotlinx.android.synthetic.main.mapbox.*
-
-
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import timber.log.Timber
 
 
-class RunMapBoxFragment:Fragment(R.layout.mapbox),
+class SelectLocationFragment:Fragment(R.layout.select_location),
     com.mapbox.mapboxsdk.maps.OnMapReadyCallback,
     MapboxMap.OnMapClickListener,
     PermissionsListener {
@@ -72,7 +70,7 @@ class RunMapBoxFragment:Fragment(R.layout.mapbox),
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.mapbox, container, false)
+        val rootView = inflater.inflate(R.layout.select_location, container, false)
         mapView = rootView.findViewById(R.id.mapViewChose)
         mapView!!.onCreate(savedInstanceState)
         mapView!!.getMapAsync(this)
@@ -169,12 +167,14 @@ class RunMapBoxFragment:Fragment(R.layout.mapbox),
                     }
 
                     // Use the map camera target's coordinates to make a reverse geocoding search
-                    reverseGeocode(
-                            Point.fromLngLat(
-                                    mapTargetLatLng.longitude,
-                                    mapTargetLatLng.latitude
-                            )
-                    )
+
+
+//                    reverseGeocode(
+//                            Point.fromLngLat(
+//                                    mapTargetLatLng.longitude,
+//                                    mapTargetLatLng.latitude
+//                            )
+//                    )
 
 
                     Toast.makeText(
@@ -315,8 +315,8 @@ class RunMapBoxFragment:Fragment(R.layout.mapbox),
         }
     }
     private fun initDroppedMarker(loadedMapStyle: Style) {
-
-        loadedMapStyle.addImage("dropped-icon-image", resources.getDrawable(R.drawable.ic_pin))
+//        ContextCompat.getDrawable(getActivity(), R.drawable.name);
+        loadedMapStyle.addImage("dropped-icon-image", ContextCompat.getDrawable(requireActivity(), R.drawable.ic_pin)!!)
         loadedMapStyle.addSource(GeoJsonSource("dropped-marker-source-id"))
         loadedMapStyle.addLayer(
             SymbolLayer(
