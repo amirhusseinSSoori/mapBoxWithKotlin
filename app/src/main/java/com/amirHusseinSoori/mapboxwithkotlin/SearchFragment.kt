@@ -25,7 +25,7 @@ import com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconImage
 import com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconOffset
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource
-import kotlinx.android.synthetic.main.serach_fragment.*
+import kotlinx.android.synthetic.main.search_fragment.*
 
 
 class SearchFragment : Fragment(R.layout.search_fragment), OnMapReadyCallback {
@@ -60,7 +60,7 @@ class SearchFragment : Fragment(R.layout.search_fragment), OnMapReadyCallback {
 
 
 
-
+            setUpSource(style)
            // Set up a new symbol layer for displaying the searched location's feature coordinates
             setupLayer(style);
 
