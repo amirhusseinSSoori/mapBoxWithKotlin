@@ -22,5 +22,13 @@ class MainLocation:Fragment(R.layout.main_fragment) {
         btn_search.setOnClickListener {
             findNavController().navigate(R.id.action_mainLocation_to_searchFragment)
         }
+        btn_getMultiLocation.setOnClickListener {
+            findNavController().navigate(R.id.action_mainLocation_to_getMultiFragment)
+
+        }
+        btn_ZoomBasedIconSwitchFragment.setOnClickListener {
+            findNavController().navigate(R.id.action_mainLocation_to_zoomBasedIconSwitchFragment)
+        }
+
     }
 }

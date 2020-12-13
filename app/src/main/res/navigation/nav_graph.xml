@@ -21,6 +21,13 @@
         <action
             android:id="@+id/action_mainLocation_to_runMapBoxFragment"
             app:destination="@id/runMapBoxFragment"/>
+        <action
+            android:id="@+id/action_mainLocation_to_getMultiFragment"
+            app:destination="@id/getMultiFragment"/>
+
+        <action
+            android:id="@+id/action_mainLocation_to_zoomBasedIconSwitchFragment"
+            app:destination="@id/zoomBasedIconSwitchFragment"/>
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -29,4 +36,14 @@
         android:label="SearchFragment" >
 
     </fragment>
+    <fragment
+        android:id="@+id/getMultiFragment"
+        tools:layout="@layout/get_multi_circle_marker_fragment"
+        android:name="com.amirHusseinSoori.mapboxwithkotlin.GetMultiCircleMarkerFragment"
+        android:label="GetMultiFragment" />
+    <fragment
+        android:id="@+id/zoomBasedIconSwitchFragment"
+        android:name="com.amirHusseinSoori.mapboxwithkotlin.ZoomBasedIconSwitchFragment"
+        tools:layout="@layout/zoom_based_icon_switch"
+        android:label="ZoomBasedIconSwitchFragment" />
 </navigation>
