@@ -1,14 +1,11 @@
 package com.amirHusseinSoori.mapboxwithkotlin
 
 
-import android.Manifest
-import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.mapbox.android.core.permissions.PermissionsListener
@@ -40,7 +37,6 @@ class ZoomBasedIconSwitchFragment : Fragment(R.layout.zoom_based_icon_switch), P
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Mapbox.getInstance(requireContext(), getString(R.string.mapbox_access_token));
-
     }
 
     override fun onCreateView(
@@ -75,8 +71,7 @@ class ZoomBasedIconSwitchFragment : Fragment(R.layout.zoom_based_icon_switch), P
                     iconAllowOverlap(true));
             style.addLayer(singleLayer);
 
-            Toast.makeText(requireContext(),
-                    "hello", Toast.LENGTH_SHORT).show();
+      
         }
 
 
