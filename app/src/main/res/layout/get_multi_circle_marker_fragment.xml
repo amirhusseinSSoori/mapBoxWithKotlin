@@ -5,13 +5,16 @@
     xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.mapbox.mapboxsdk.maps.MapView
-        android:id="@+id/mapView"
+        android:id="@+id/mapViewCustom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        mapbox:mapbox_cameraTargetLat="35.693273"
+        mapbox:mapbox_cameraTargetLng="51.370578"
+        mapbox:mapbox_cameraZoom="6"
      />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

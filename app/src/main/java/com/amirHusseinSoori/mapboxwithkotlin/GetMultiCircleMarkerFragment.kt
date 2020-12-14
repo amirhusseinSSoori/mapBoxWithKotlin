@@ -75,7 +75,7 @@ MapboxMap.OnMapClickListener,
             savedInstanceState: Bundle?
     ): View? {
         val rootView = inflater.inflate(R.layout.get_multi_circle_marker_fragment, container, false)
-        mapView = rootView.findViewById(R.id.mapView)
+        mapView = rootView.findViewById(R.id.mapViewCustom)
         mapView!!.onCreate(savedInstanceState)
         mapView!!.getMapAsync(this)
         return rootView

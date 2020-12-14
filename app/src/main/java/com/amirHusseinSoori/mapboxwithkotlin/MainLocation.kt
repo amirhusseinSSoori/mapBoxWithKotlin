@@ -29,6 +29,9 @@ class MainLocation:Fragment(R.layout.main_fragment) {
         btn_ZoomBasedIconSwitchFragment.setOnClickListener {
             findNavController().navigate(R.id.action_mainLocation_to_zoomBasedIconSwitchFragment)
         }
+        btn_CustomizedLocationIcon.setOnClickListener {
+            findNavController().navigate(R.id.action_mainLocation_to_customizedLocationIconFragment)
+        }
 
     }
 }

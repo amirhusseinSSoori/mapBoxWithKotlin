@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_mainLocation_to_zoomBasedIconSwitchFragment"
             app:destination="@id/zoomBasedIconSwitchFragment"/>
+        <action
+            android:id="@+id/action_mainLocation_to_customizedLocationIconFragment"
+            app:destination="@id/customizedLocationIconFragment"/>
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -46,4 +49,9 @@
         android:name="com.amirHusseinSoori.mapboxwithkotlin.ZoomBasedIconSwitchFragment"
         tools:layout="@layout/zoom_based_icon_switch"
         android:label="ZoomBasedIconSwitchFragment" />
+    <fragment
+        android:id="@+id/customizedLocationIconFragment"
+        tools:layout="@layout/customized_location_icon_fragment"
+        android:name="com.amirHusseinSoori.mapboxwithkotlin.CustomizedLocationIconFragment"
+        android:label="CustomizedLocationIconFragment" />
 </navigation>

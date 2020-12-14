@@ -71,7 +71,7 @@ class ZoomBasedIconSwitchFragment : Fragment(R.layout.zoom_based_icon_switch), P
                     iconAllowOverlap(true));
             style.addLayer(singleLayer);
 
-      
+
         }
 
 
