@@ -69,4 +69,5 @@
         android:text="CustomizedLocationIcon"
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@+id/btn_ZoomBasedIconSwitchFragment" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

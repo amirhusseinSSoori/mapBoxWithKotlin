@@ -33,5 +33,6 @@ class MainLocation:Fragment(R.layout.main_fragment) {
             findNavController().navigate(R.id.action_mainLocation_to_customizedLocationIconFragment)
         }
 
+
     }
 }

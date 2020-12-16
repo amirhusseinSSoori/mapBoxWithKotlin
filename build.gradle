@@ -4,6 +4,11 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.1"
@@ -19,6 +24,9 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+
+
     }
 }
 

@@ -31,6 +31,7 @@
         <action
             android:id="@+id/action_mainLocation_to_customizedLocationIconFragment"
             app:destination="@id/customizedLocationIconFragment"/>
+
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -54,4 +55,5 @@
         tools:layout="@layout/customized_location_icon_fragment"
         android:name="com.amirHusseinSoori.mapboxwithkotlin.CustomizedLocationIconFragment"
         android:label="CustomizedLocationIconFragment" />
+
 </navigation>
